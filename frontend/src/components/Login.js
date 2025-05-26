@@ -66,7 +66,7 @@ function Login() {
 
             <form onSubmit={handleLogin}>
               <div className="form-group">
-                <label>اسم المستخدم</label>
+                <label > اسم المستخدم</label>
                 <input
                   type="text"
                   className="form-control"
