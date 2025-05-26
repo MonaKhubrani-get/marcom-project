@@ -1,0 +1,22 @@
+services:
+  db:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: mydatabase
+    ports:
+      - "3306:3306"
+
+  backend:
+    build: ./backend
+    ports:
+      - "5050:5000"  # ← غيرنا المنفذ من 5000 إلى 5050
+    depends_on:
+      - db
+
+  frontend:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./frontend:/usr/share/nginx/html:ro

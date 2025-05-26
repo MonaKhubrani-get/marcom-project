@@ -1,0 +1,31 @@
+ 
+رقم	الأمر	الوظيفة
+1	cd C:\xampp\htdocs\M	الدخول إلى مجلد المشروع
+2	docker-compose up -d --build	تشغيل المشروع بالكامل باستخدام Docker
+3	cd C:\xampp\htdocs\M\backend	الدخول إلى مجلد backend
+4	python app.py	تشغيل السيرفر Flask مباشرة بدون Docker
+5	cd C:\xampp\htdocs\M\frontend	الدخول إلى مجلد React frontend
+6	npm start	تشغيل الواجهة الأمامية React
+
+
+
+
+7       http://localhost:8081           SQL
+8       docker-compose down -v       حذف الحاوية
+9       docker-compose up --build    بناء الحاوية
+
+
+10   SQL IN    http://localhost:8081  
+
+الحقل	القيمة
+System	PostgreSQL
+Server	db
+Username	root
+Password	rootpass
+Database
+
+
+
+
+
+تثبيت Git على Windows
