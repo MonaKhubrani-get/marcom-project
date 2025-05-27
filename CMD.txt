@@ -22,13 +22,9 @@ Username	root
 Password	rootpass
 Database
  
+ 
 
-تثبيت Git على Windows
-MonaKhubrani-get     اسم github
-الرمز   
-
-
-اضافه مشروع 
+اضافه مشروع ===========
 1- repository
 2- New
 3- اكثب اسم المشروع في Repository name*
@@ -36,7 +32,18 @@ MonaKhubrani-get     اسم github
 
 
 
-للحذف المشروع 
+اضافه المشروع من github============
+
+cd C:\xampp\htdocs\M
+git status
+git add .
+git commit -m "✨ تعديل في صفحة تسجيل الدخول"
+git push origin main
+
+
+للحذف المشروع من github============
+
+ 
 1- Settings
 2-Delete this repository
 3- اضغط I want to delete this repository
@@ -44,7 +51,26 @@ MonaKhubrani-get     اسم github
 5- ضع اسم المشروع ب المربع مثل  MonaKhubrani-get/marcom-project
 6-  ثم  Delete this repository
 
-تشغيل المشروع من غير بناء و حذف الحاويه فقط ب -d
+Git ==============
+
+تثبيت Git على Windows 
+MonaKhubrani-get  اسم  
+الرمز    Monamhk1119@
+
+1- انشيء ملف .gitattributes 
+2- اضع فيه
+# استخدم CRLF في بيئة Windows تلقائيًا
+* text=auto
+# ملفات JS و JSON و HTML و CSS بنهاية LF فقط (للتوحيد عبر الأنظمة)
+*.js text eol=lf
+*.jsx text eol=lf
+*.json text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+
+
+
+تشغيل المشروع من غير بناء و حذف الحاويه فقط ب -d=============
 
 docker-compose down
 docker-compose up -d

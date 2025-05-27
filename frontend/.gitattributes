@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.sqlite3
+*.egg-info/
+venv/
+env/
+
+# Environment files
+.env
+
+# Node.js
+node_modules/
+build/
+dist/
+
+# Logs
+*.log
+
+# VSCode and IDEs
+.vscode/
+.idea/
+
+# Docker volumes and databases
+db-data/
+postgres-data/
+*.pid
+
+# System files
+.DS_Store
+Thumbs.db
