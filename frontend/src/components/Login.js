@@ -66,7 +66,7 @@ function Login() {
 
             <form onSubmit={handleLogin}>
               <div className="form-group">
-                <label > اسم المستخدم</label>
+                <label>اسم المستخدم</label>
                 <input
                   type="text"
                   className="form-control"
@@ -90,7 +90,7 @@ function Login() {
               </div>
 
               <button type="submit" className="btn btn-brand-02 btn-block">
-                تسجيل الدخول
+                    1  تسجيل الدخول
               </button>
             </form>
 

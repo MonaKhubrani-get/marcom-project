@@ -7,9 +7,7 @@
 5	cd C:\xampp\htdocs\M\frontend	الدخول إلى مجلد React frontend
 6	npm start	تشغيل الواجهة الأمامية React
 
-
-
-
+ 
 7       http://localhost:8081           SQL
 8       docker-compose down -v       حذف الحاوية
 9       docker-compose up --build    بناء الحاوية
@@ -23,9 +21,30 @@ Server	db
 Username	root
 Password	rootpass
 Database
-
-
-
-
+ 
 
 تثبيت Git على Windows
+MonaKhubrani-get     اسم github
+الرمز   
+
+
+اضافه مشروع 
+1- repository
+2- New
+3- اكثب اسم المشروع في Repository name*
+4- Create repository
+
+
+
+للحذف المشروع 
+1- Settings
+2-Delete this repository
+3- اضغط I want to delete this repository
+اضغط  -4 I have read and understand these effects 
+5- ضع اسم المشروع ب المربع مثل  MonaKhubrani-get/marcom-project
+6-  ثم  Delete this repository
+
+تشغيل المشروع من غير بناء و حذف الحاويه فقط ب -d
+
+docker-compose down
+docker-compose up -d

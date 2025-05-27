@@ -16,6 +16,8 @@ services:
     build: ./backend
     ports:
       - "5000:5000"
+    volumes:
+      - ./backend:/app  # 👈 ربط مجلد الباكند من الجهاز
     depends_on:
       - db
     environment:
@@ -29,7 +31,12 @@ services:
       context: ./frontend
       dockerfile: Dockerfile
     ports:
-      - "8080:80"
+      - "8080:3000"  # لأن React يشغل على 3000 وليس 80 أثناء التطوير
+    volumes:
+      - ./frontend:/app  # 👈 ربط مجلد الفرونت من الجهاز
+      - /app/node_modules  # لمنع تعارض node_modules من جهازك
+    working_dir: /app
+    command: npm start
     depends_on:
       - backend
 
